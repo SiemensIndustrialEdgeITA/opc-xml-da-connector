@@ -1,0 +1,16 @@
+[
+  {
+    "ID" :  0,
+    "IP": "192.168.1.2",
+    "USER": "simotion",
+    "PASS": "simotion",
+    "VARIABLES": [ "unit/Programm.variabile"]
+  }
+  // {
+  //   "ID" :  1,
+  //   "IP": "192.168.1.2",
+  //   "USER": "simotion",
+  //   "PASS": "simotion",
+  //   "VARIABLES": [ "unit/Programm.variabile" ]
+  // }
+]

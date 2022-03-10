@@ -1,0 +1,7 @@
+{
+    "MQTT_USER":"edge",
+    "MQTT_PASSWORD":"edge",
+    "MQTT_IP":"ie-databus",
+    "PUB_TOPIC":"topic1",
+    "SUB_TOPIC":"topic2"
+}

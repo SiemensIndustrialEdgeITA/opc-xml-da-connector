@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "JSON Schema for my JSON file format",
+  "type": "object",
+  "properties": {
+    "mqttinfo": {
+        "type": "object",
+        "properties": {
+          "PUB_TOPIC": {
+            "title": "Topic 1",
+            "default": "topic1",
+            "type": "string"
+          },
+          "SUB_TOPIC": {
+            "title": "Topic 2",
+            "default": "topic2",
+            "type": "string"
+          },
+          "MQTT_IP": {
+            "title": "MQTT Broker",
+            "default": "ie-databus",
+            "type": "string"
+          },
+          "MQTT_USER": {
+            "title": "Username",
+            "type": "string"
+          },
+          "MQTT_PASSWORD": {
+            "title": "Password",
+            "type": "string"
+          }
+        },
+        "required": [ "PUB_TOPIC", "SUB_TOPIC", "MQTT_IP", "MQTT_USER", "MQTT_PASSWORD" ]
+      }
+  }
+}

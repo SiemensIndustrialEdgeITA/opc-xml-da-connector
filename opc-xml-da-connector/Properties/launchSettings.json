@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "GdmApp": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

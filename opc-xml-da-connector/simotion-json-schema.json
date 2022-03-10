@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "JSON Schema for my JSON file format",
+  "type": "array",
+  "description": "An array of version numbers.",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "properties": {
+      "ID": {
+        "type": "integer"
+      },
+      "IP": {
+        "type": "string"
+      },
+      "USER": {
+        "type": "string"
+      },
+      "PASS": {
+        "type": "string"
+      },
+      "VARIABLES": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "required": [ "IP", "USER", "PASS", "VARIABLES" ]
+  }
+}

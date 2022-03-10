@@ -1,0 +1,24 @@
+version: '2.4'
+
+services:
+  opc-xml-da-connector:
+    image: opc-xml-da-connector
+    build:
+      context: .
+      dockerfile: opc-xml-da-connector/Dockerfile
+    volumes:
+      - ./cfg-data/:/app/cfg-data/ 
+    cap_add:
+      - NET_ADMIN
+    networks:
+      - proxy-redirect
+      - zzz_layer2_net1
+
+networks:
+  proxy-redirect:
+    external: true
+    name: proxy-redirect
+
+  zzz_layer2_net1:
+    external: true
+    name: zzz_layer2_net1
